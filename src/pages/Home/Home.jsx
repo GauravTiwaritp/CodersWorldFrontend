@@ -7,8 +7,7 @@ import Button from "../../components/shared/Button/Button";
 const Home = () => {
   const Navigate = useNavigate();
   const startRegister = () => {
-    Navigate("/register");
-    console.log("button clicked");
+    Navigate("/authenticate");
   };
   return (
     <div className={styles.cardWrapper}>
@@ -20,7 +19,7 @@ const Home = () => {
           delectus, veniam inventore eligendi, ab soluta!
         </p>
         <div>
-          <Button onClick={startRegister} text={"Get your username"} />
+          <Button onClick={startRegister} text={"Let's go"} />
         </div>
         <div className={styles.signinWrapper}>
           <span className={styles.hasInvited}>Have an invite text?</span>
